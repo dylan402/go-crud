@@ -1,0 +1,13 @@
+version: '3'
+services:
+  pg:
+    image: postgres:15
+    container_name: go-crud-pg
+    environment:
+      - POSTGRES_DB=go-crud
+      - POSTGRES_PASSWORD=hl986ghBfGhBVfT8Jb
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ./docker/volume/pg/pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

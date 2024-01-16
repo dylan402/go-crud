@@ -1,0 +1,3 @@
+# Docker Volumes
+/docker/volume/pg/*
+!/docker/volume/pg/.gitkeep
